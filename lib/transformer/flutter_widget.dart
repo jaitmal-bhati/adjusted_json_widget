@@ -4059,7 +4059,7 @@ class _FlutterWidgetState extends material.State<FlutterWidget> {
         radius: value.radius,
         borderRadius: $borderRadius(value.borderRadius),
         customBorder: $shapeBorder(context, value.customBorder),
-        enableFeedback: value.enableFeedback,
+        enableFeedback: value.enableFeedback ?? true, // or false, as appropriate,
         excludeFromSemantics: value.excludeFromSemantics,
         canRequestFocus: value.canRequestFocus,
         onFocusChange: $boolSelection(context, value.onFocusChange),
